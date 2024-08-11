@@ -1,0 +1,51 @@
+DATA_ANALYST = {
+    "quiz": {
+        "Power_BI": {
+            "q1": {
+                "question": "In Power BI, Which feature allows you to automatically apply a set of filters from one report page to another, ensuring consistency across multiple visuals",
+                "options": [
+                    "Sync Slicers",
+                    "Cross-Filtering",
+                    "Drillthrough",
+                ],
+                "answer": "Sync Slicers"
+            }
+        },
+        "Sql": {
+           "q1":{
+               "question": "Which SQL clause would you use to group records into intervals, such as every 10 rows?",
+               "options": [
+                   "NTILE()",
+                   "GROUP BY",
+                   "WINDOW",
+                   "RANGE"
+               ],
+               "answer": "NTILE"
+           } 
+        },
+        "Python": {
+            "q1": {
+                "question": "Given two dictionaries dict1 = {'a': 1, 'b': 2, 'c': 3} and dict2 = {'b': 4, 'c': 5, 'd': 6}, which method would you use to combine them into a single dictionary such that the values from dict2 override the values from dict1 for matching keys, and what would be the resulting dictionary?",
+                "options": [
+                    " result = {**dict1, **dict2} resulting in {'a': 1, 'b': 4, 'c': 5, 'd': 6}",
+                    "result = dict1 + dict2 resulting in {'a': 1, 'b': 4, 'c': 5, 'd': 6}",
+                    "result = dict1.update(dict2) resulting in {'a': 1, 'b': 2, 'c': 3, 'd': 6}",
+                    "result = dict1.merge(dict2) resulting in {'a': 1, 'b': 2, 'c': 3, 'd': 6}"
+                ],
+                "answer": "result = {**dict1, **dict2} resulting in {'a': 1, 'b': 4, 'c': 5, 'd': 6}"
+            },
+            "q2": {
+                "question": "which of the following is mutable?",
+                "options": [
+                    "list,set",
+                    "tuple,string",
+                    "list, tuple, set",
+                    "tuple"
+                ],
+                "answer": "list,set"
+            }
+        }
+    }
+}
+
+print(DATA_ANALYST["quiz"]["Python"]["q2"])
